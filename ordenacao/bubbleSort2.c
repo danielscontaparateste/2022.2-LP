@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define TAM 50 
+#define TAM 50
 #define QTD 100
 
 void imprimirVetor(int x[], int t);
