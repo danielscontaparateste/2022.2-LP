@@ -30,6 +30,8 @@ int main(){
     puts("--------");
     imprimirMatriz(pData, nl, nc);
 
+    free(pData);
+
     return 0;
 
 }
