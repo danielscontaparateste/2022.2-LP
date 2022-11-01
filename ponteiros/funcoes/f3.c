@@ -8,7 +8,7 @@ void dividir(int, int, int *);
 void subtrair(int, int, int *);
 void somar(int, int, int *);
 
-void calcular( void (*pF) (int, int, int *), int a, int b, int *pR);
+void calcular( void (*pF) (), int a, int b, int *pR);
 
 typedef void (*Func)();
 
@@ -25,7 +25,7 @@ int main(int argc, char *argv[]){
 	int r;
 
     // void (*v[])()= {multiplicar, dividir, subtrair};
-	Func v[] = {multiplicar, dividir, subtrair, somar};
+	Func v[] = {dividir, multiplicar, subtrair, somar};
 	
 	calcular( v[op], n1, n2, &r);
 	printf("r = %d\n",r);
@@ -49,6 +49,6 @@ void somar(int x, int y, int *z){
 	*z = x + y;
 }
 
-void calcular( void (*pF) (int, int, int *), int a, int b, int *pR){
+void calcular( void (*pF) (), int a, int b, int *pR){
 	(*pF)(a,b,pR);
 }
