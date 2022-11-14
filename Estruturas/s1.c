@@ -3,8 +3,6 @@
 #define TC 3
 #define TD 50
 
-
-
 struct UF{
     char codigo[TC];
     char descricao[TD];
