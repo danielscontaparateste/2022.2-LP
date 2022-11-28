@@ -7,7 +7,7 @@ int main(){
     FILE *fp;
     char str[TAM];
 
-    fp = fopen("strings2.txt","w");
+    fp = fopen("strings.txt","w");
 
     if (fp==NULL){
         puts("Erro ao abrir o arquivo");
